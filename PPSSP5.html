@@ -1,0 +1,282 @@
+<html>
+<head>
+    <link rel="icon" href="logo.png" type="image/png">
+
+    
+
+    <meta charset='utf-8'>
+
+
+    <title>ДПС #СП5</title>
+
+    <style>
+        
+
+
+body::-webkit-scrollbar {
+  width: 12px; /* Ширина всего элемента навигации */
+}
+
+body::-webkit-scrollbar-track {
+  background: #171717; /* Цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #202020; /* Цвет бегунка */
+  border-radius: 20px; /* Округление бегунка */
+  border: 3px solid #202020; /* Оформление границ бегунка */
+  
+}
+body {
+    background-color: #171717; 
+    background-position: center; 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+
+            
+        }
+
+        .text{
+    position: fixed;
+    top: 150px;
+    left: 5px;
+    background-color: 171717;
+        }
+
+        .text3 {
+                    color: aliceblue;
+                }
+
+                a {
+    text-decoration: none;
+   
+   }
+
+   a:hover {
+   text-decoration: none;
+   }
+
+        button.round {     
+ width: 210px; height: 57px; /* Размеры кнопки */
+ background-color: #171717; /* Цвет фона */
+ border-radius: 10%; /* Радиус скругления */
+ border: none; /* Убираем рамку вокруг кнопки */
+ display: block;
+transition: transform 1.0s;
+}
+
+
+
+   button.round:hover{
+
+transform: scale(1.01);
+}
+
+
+.et {
+                position: fixed;
+                top: 25px;
+                left: 24px;
+            }
+
+            .sec {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                opacity: 90%;
+
+            }
+
+            table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    
+    color: white;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #202020;
+    color:white
+}
+
+
+            .tab {
+     position: fixed;
+    top: 150px;
+    left: 5px;
+    background-color: 171717;
+                
+    
+    width: 210px;
+    height: 57px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+    
+    width: 100%;
+    height: 57px;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #171717;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #171717;
+}
+
+/* Style the tab content */
+.tabcontent {
+    position:relative;
+    top: 150px;
+    left: 230px;
+    background-color: #202020;
+    color: rgb(255, 255, 255);
+    float: left;
+    padding: 0px 12px;
+    
+    width: 1250px;
+    border-left: none;
+    height: 10000px;
+
+}
+
+.heead{
+position: fixed;
+top: 0px;
+left: 0px;
+    width: 100%;
+    height: 100px;
+}
+
+    </style>
+</head>
+
+<body>
+
+ <div class="heead">
+  <img src="nasa.jpg" width="2160" height="110px">
+
+ </div>
+
+    <div class="tab">
+        <br>
+        <br><button class="tablinks" onclick="openCity(event, 'News')" id="defaultOpen"><h4>Новости</h4></button>
+      <br>  <button class="tablinks" onclick="openCity(event, 'Pravo')"><h4>Правовое регулирование</h4></button>
+       <br> <button class="tablinks" onclick="openCity(event, 'Rosick')"><h4>Розыск</h4></button>
+       <br> <button class="tablinks" onclick="openCity(event, 'Gosn')"><h4>Выдача госномера</h4></button>
+       <br> <button class="tablinks" onclick="openCity(event, 'TC')"><h4>Регистрация ТС</h4></button>
+       <br> <button class="tablinks" onclick="openCity(event, 'vda')"><h4>Выдача в/у</h4></button>
+      </div>
+
+      <div id="News" class="tabcontent">
+        <h2>В этой главе вы сможете увидеть свежые новости</h2>
+        <h3>про состояние дороги,и предупреждения о поведении на дороге в этот день</h3><br><br>
+        <h2>Было принято новое постановление! Узнать подробнее можно в разделе "Правовое регулирование".</h2>
+        <h3>Будьте аккуратны на дороге и приятного пути!</h3>
+      </div>
+
+      <div id="Pravo" class="tabcontent">
+        <h2>Объявления о вступлении в ЮР силу постановлений.</h2>
+        <br><br>
+        <h2>Постановление о объявлении участка Зеленой ветки</h2>
+        <h3>аварийным участком,на трассе Зеленой ветки</h3>
+        <h3>15.07.2024 с 15:00 будет поставлен пункт контроля полосы и скорости,о снятие статуса аварийной дороги сообщат непосредственные начальники на пункте контроля.</h3>
+        <h3>будут введены такие ограничения как: вождение транстпортного средства по нужной полосе трассы,скоростной режим в пределах 50 блоков от пункта контроля 20км/ч</h3>
+        <h3>при остановке сотрудником службы будут проверки такие как,просмотр скорости движения на камере,просмотр на камере движения по полосе,проверка документов,проверка водительских прав,проверка нахождения в состояние алкогольного опьянения</h3>
+        <h3>при нарушении правил сотрудники имеют полное право выписать штраф по 1 из причины проверок.</h3><br>
+
+
+        <h2>Непосредственными начальниками на аварийном участке дороги назначены</h2>
+        <h3>Полковник ДПС Hamlin_</h3>
+        <h3>Полковник ДПС martsograshie</h3>
+        <h3>Помощники на аварийном участке отсутствуют.</h3>
+        <h2>Постановление подписано Генералом Дорожно-Патрульной-Службы: ZhuroVW_</h2>
+        <h2>Фотографии аварийного участка трассы прикреплены ниже(Предоставленны от ДПС СП5)</h2>
+        <img src="Zelen (1).png" width="510" height="290px">
+        <img src="Zelen (2).png" width="510" height="290px">
+      </div>
+
+      <div id="Rosick" class="tabcontent">
+        <h2>В этой главе вы сможете увидеть людей находящихся в розыске или штрафы</h2><br><br>
+        <table>
+          <tr>
+            <th>Никнейм</th>
+            <th>Причина</th>
+            <th>Размер штрафа</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+        </table>
+      </div>
+
+      <div id="Gosn" class="tabcontent">
+        <h3>Правовое3</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+
+      <div id="TC" class="tabcontent">
+        <h3>Правовое5</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+
+      <div id="vda" class="tabcontent">
+        <h3>Правовое6</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+
+
+                             <div class="sec">
+                                         <div class="et">
+                                             <img src="logo.png" width="180" height="170">
+                                         </div>
+                            </div>
+    
+
+          
+
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            
+            document.getElementById("defaultOpen").click();
+            </script>
+</body>
+
+
+</html>
